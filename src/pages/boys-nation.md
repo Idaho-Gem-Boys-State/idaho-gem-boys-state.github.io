@@ -25,6 +25,6 @@ At the end of the week, two delegates are chosen to represent Idaho at American 
 
 ## Stay connected
 
-Many of our volunteer counselors and deans are program alumni. If you're an alum, we'd love your help. [Learn about volunteering](/staff/).
+Every counselor and dean on our staff is a former delegate. [Meet the staff](/staff/).
 
 {% socialLinks %}

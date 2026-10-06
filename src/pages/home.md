@@ -97,5 +97,3 @@ testimonials: []
 ## One week. Real responsibility.
 
 Most people learn how government works from a textbook. At Gem Boys State, delegates learn it by doing it, running a government of their own from the first day to the last.
-
-You'll come home a stronger speaker, a more confident leader, and someone who understands how decisions really get made, with friends from all over Idaho.

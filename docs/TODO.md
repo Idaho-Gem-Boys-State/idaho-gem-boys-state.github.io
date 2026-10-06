@@ -59,7 +59,7 @@ These appear highlighted in yellow on the page listed.
 
 ### /staff/  (src/pages/staff.md)
 
-- Add volunteer requirements (for example, minimum age) and what volunteers can expect to commit.
+- Add any other staff requirements, such as minimum age.
 
 ### /the-experience/  (src/pages/the-experience.md)
 

@@ -22,26 +22,24 @@ description: "Packing list, dress code, and frequently asked questions for Gem B
 {% callout "Provided for you" %}
 - **Uniform shirts**
 - **Three meals a day**, except lunch on the two days at the Capitol
-
-**You don't need a suit.**
 {% endcallout %}
 
 ## Dress code
 
 - **During the day:** slacks or khakis and closed-toe shoes.
 - **Not allowed during the day:** denim, shorts, or hats.
-- **Uniform shirts** are provided.
+- **At night:** regular clothes and pajamas are fine.
 - **No suit** needed.
 
 ## Arrival and pickup
-
-Gem Boys State {{ site.session.year }} will be held at **{{ site.venue.name }}** in {{ site.venue.city }}. **Dates:** {{ site.session.dates_text }}.
 
 [TODO: Add check-in time and place, pickup time and place, and any transportation details.]
 
 ## Before you go
 
-Delegates write and debate legislation during the week. If you'd like a head start, read *How to Write a Boys State Bill* below.
+{% callout "Required: write your bill before you arrive", "garnet" %}
+Every delegate must write a bill **before arriving** at Gem Boys State. Use *How to Write a Boys State Bill* (below) as your guide.
+{% endcallout %}
 
 {% documentList "delegates" %}
 
@@ -49,10 +47,6 @@ Delegates write and debate legislation during the week. If you'd like a head sta
 
 {% faq "What's the schedule?" %}
 We don't publish it. Not knowing what's coming is part of the experience. Everything you need to plan is on this page.
-{% endfaq %}
-
-{% faq "Do I need a suit?" %}
-No. Bring slacks or khakis and closed-toe shoes for daytime. Uniform shirts are provided.
 {% endfaq %}
 
 {% faq "Can I bring my phone?" %}
@@ -80,5 +74,5 @@ Tell your sponsoring Post right away. {{ site.session.refund_sentence }}
 {% endfaq %}
 
 {% faq "Who will be with the delegates?" %}
-Volunteer counselors and deans, many of them program alumni, alongside members of The American Legion. Volunteer staff complete a background check. [Meet the staff](/staff/).
+Volunteer counselors and deans, all of them former delegates, alongside members of The American Legion. Volunteer staff complete a background check. [Meet the staff](/staff/).
 {% endfaq %}

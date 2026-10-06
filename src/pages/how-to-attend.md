@@ -22,7 +22,7 @@ Looking for the program for young women? Visit [Idaho Syringa Girls State]({{ si
 1. **Find an American Legion Post near you.** Use the Legion's [Find a Post directory]({{ site.links.find_a_post }}). Tip: search near your town, then check **Boys State** under "Post Program" to narrow the list.
 2. **Contact the Post.** Ask whether they're sponsoring delegates for Gem Boys State {{ site.session.year }}, how they choose them, and what they need from you.
 3. **Get selected.** The Post selects its delegates and registers them with Gem Boys State. The cost is normally paid by the Post, a local business, or a community group.
-4. **Get ready for the week.** Once you're registered, [Getting Ready](/getting-ready/) covers what to bring and what to wear.
+4. **Get ready for the week.** Once you're registered, [Getting Ready](/getting-ready/) covers what to bring, what to wear, and the bill every delegate writes before arriving.
 {% endsteps %}
 
 {% callout "Start early", "gold" %}
@@ -41,7 +41,7 @@ Uniform shirts and three meals a day are provided. Delegates bring money for lun
 
 {% cards %}
 {% card "Who runs the week", "shield" %}
-Volunteer counselors and deans, many of them program alumni, work alongside members of The American Legion. Volunteer staff complete a background check. [Meet the staff](/staff/).
+Volunteer counselors and deans, all of them former delegates, work alongside members of The American Legion. Volunteer staff complete a background check. [Meet the staff](/staff/).
 {% endcard %}
 {% card "What it costs", "dollar" %}
 {{ site.cost.text }} per delegate, usually paid by the sponsoring Post, a local business, or a community group.

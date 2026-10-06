@@ -162,7 +162,7 @@ links:
   national_program: "https://www.boysandgirlsstate.org/"
 
   # Idaho's program for young women.
-  girls_state: "https://idaho.legion.org/idaho/girlsstate"
+  girls_state: "https://www.idgirlsstate.org/"
 
   # The American Legion, Department of Idaho website.
   department_of_idaho: "https://www.legion.org/idaho"
@@ -216,7 +216,7 @@ documents:
   - title: "How to Write a Boys State Bill"
     for: delegates
     link: "https://idaho.legion.org/sites/legion.org/files/legion/site-documents/2024%20How%20to%20Write%20a%20Boys%20State%20Bill.docx"
-    note: "A guide to drafting a bill."
+    note: "Required. A step-by-step guide to writing your bill."
 
   # TODO: Upload a packing list that covers logistics only (nothing about
   # activities), then put its file name in "link" below.

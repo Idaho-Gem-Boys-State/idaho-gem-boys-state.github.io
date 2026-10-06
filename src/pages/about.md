@@ -25,7 +25,7 @@ During the week, delegates run a simulated state government at the city, county,
 
 Gem Boys State is a program of The American Legion, Department of Idaho. Delegates are selected and sponsored by local American Legion Posts across the state.
 
-The week is run by volunteer counselors and deans, many of them program alumni, alongside members of The American Legion. [Meet the staff](/staff/).
+The week is run by volunteer counselors and deans, all of them former delegates, alongside members of The American Legion. [Meet the staff](/staff/).
 
 {% emblem %}
 

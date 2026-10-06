@@ -1,27 +1,20 @@
 ---
 title: "Staff & Volunteers"
 eyebrow: "The people behind the week"
-intro: "Gem Boys State is run by volunteers: counselors and deans, many of them program alumni, alongside members of The American Legion."
-description: "Who staffs Gem Boys State and how to volunteer, including the required background check."
+intro: "Gem Boys State is run by volunteers: counselors and deans who are all former delegates themselves, alongside members of The American Legion."
+description: "Who staffs Gem Boys State, and the background check every volunteer completes."
 cta: false
 ---
 
 ## Who staffs the week
 
-Delegates spend the week with volunteer counselors and deans. Many of them are program alumni. They work alongside members of The American Legion who volunteer their time to make the program possible.
+Delegates spend the week with volunteer counselors and deans, every one of them a former delegate. They work alongside members of The American Legion who volunteer their time to make the program possible.
 
 ## Safety
 
-Volunteer counselors and staff complete a background check before working with delegates.
+Every volunteer counselor and staff member completes a background check before working with delegates. Staff complete it here: [volunteer background check]({{ site.links.background_check }}).
 
-## Volunteer with us
-
-{% steps %}
-1. **Get in touch** at [{{ site.contact.email }}](mailto:{{ site.contact.email }}) to say you're interested.
-2. **Complete the background check** using the [volunteer background check link]({{ site.links.background_check }}).
-{% endsteps %}
-
-[TODO: Add volunteer requirements (for example, minimum age) and what volunteers can expect to commit.]
+[TODO: Add any other staff requirements, such as minimum age.]
 
 ## Documents for staff
 
