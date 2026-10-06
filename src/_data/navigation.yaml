@@ -1,0 +1,33 @@
+# Menus. You rarely need to change this file.
+# "url" is the page address. Each page's address matches its file name in
+# src/pages (for example, src/pages/about.md is /about/).
+
+# The menu across the top of every page, in order.
+# The item marked "button: true" is shown as the gold button.
+main:
+  - title: "The Experience"
+    url: "/the-experience/"
+  - title: "Getting Ready"
+    url: "/getting-ready/"
+  - title: "For Legion Posts"
+    url: "/for-posts/"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
+  - title: "How to Attend"
+    url: "/how-to-attend/"
+    button: true
+
+# Extra pages listed in the phone menu and in the footer.
+more:
+  - title: "Boys Nation & Alumni"
+    url: "/boys-nation/"
+  - title: "Staff & Volunteers"
+    url: "/staff/"
+  - title: "Documents"
+    url: "/documents/"
+  - title: "Partners & Supporters"
+    url: "/partners/"
+  - title: "Privacy"
+    url: "/privacy/"

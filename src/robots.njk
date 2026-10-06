@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# While site-details.yaml has "prototype: true", search engines are asked to stay away.
+User-agent: *
+{% if site.prototype %}Disallow: /{% else %}Allow: /{% endif %}
+{% if site.website_address and not site.prototype %}
+Sitemap: {{ site.website_address }}/sitemap.xml
+{% endif %}

@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+{#- Layout for every page except the home page. -#}
+<header class="page-hero">
+  <svg class="page-hero__art" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><use href="#gem-art"></use></svg>
+  <div class="wrap page-hero__inner">
+    {%- if eyebrow %}
+    <p class="eyebrow">{% icon "star" %}{{ eyebrow }}</p>
+    {%- endif %}
+    <h1>{{ title }}</h1>
+    {%- if intro %}
+    <p class="page-hero__intro">{{ intro | mdInline | safe }}</p>
+    {%- endif %}
+  </div>
+</header>
+
+<div class="page-body">
+  <div class="wrap prose">
+    {{ content | safe }}
+  </div>
+</div>
+
+{%- if cta %}
+{% include "partials/cta.njk" %}
+{%- endif %}

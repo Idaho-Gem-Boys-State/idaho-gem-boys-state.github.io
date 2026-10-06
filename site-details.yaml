@@ -1,0 +1,270 @@
+# =====================================================================
+#   GEM BOYS STATE: SITE DETAILS
+# ---------------------------------------------------------------------
+#   This is the ONE file to update each year. Every date, price, place,
+#   contact, and document link on the website comes from here.
+#
+#   HOW TO EDIT THIS FILE
+#   * Only change the text AFTER the colon ( : ) on a line.
+#   * Keep the "quotation marks" around text that already has them.
+#   * Don't change the spaces at the start of lines. They matter.
+#   * Lines that start with # (like this one) are notes for you.
+#     The website ignores them.
+#   * Write dates as YEAR-MONTH-DAY. Example: 2027-04-15 is April 15, 2027.
+#   * Text like [TODO: ...] means information is still missing. It shows
+#     up on the website highlighted in yellow until someone replaces it.
+#
+#   Step-by-step instructions are in README.md
+#   ("How to update the site for a new year").
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+# 1. PROTOTYPE SWITCH
+# ---------------------------------------------------------------------
+# While this site is a draft waiting for approval, keep this set to true.
+# That shows a "Prototype" banner on every page and asks search engines
+# (Google, Bing, etc.) not to list the site.
+# Change it to false on the day the site officially launches.
+prototype: true
+
+
+# ---------------------------------------------------------------------
+# 2. PROGRAM NAME AND WEB ADDRESS
+# ---------------------------------------------------------------------
+program_name: "Gem Boys State"
+tagline: "Idaho's week-long civics program for rising high school seniors"
+
+# The site's full web address (no slash at the end). For now this is the
+# free GitHub address. It powers the preview card people see when a link
+# is shared in a text or email.
+# TODO: Change this to the new domain once one is purchased and connected.
+website_address: "https://idaho-gem-boys-state.github.io"
+
+
+# ---------------------------------------------------------------------
+# 3. THE NEXT SESSION
+# ---------------------------------------------------------------------
+session:
+  year: 2027
+
+  # Which session this is. (2026 was Idaho's 82nd.)
+  # TODO: Confirm that 2027 is the 83rd session.
+  number: 83
+
+  # Have this year's dates been set?
+  #   false = the site says "Dates coming soon" and hides the countdown.
+  #   true  = the site shows the dates below and counts down to the deadline.
+  dates_announced: false
+
+  # What the site says while dates_announced is false:
+  coming_soon_message: "Dates for the 2027 session will be announced in early 2027."
+
+  # Fill these in once the dates are set. Use YEAR-MONTH-DAY.
+  # Leave them as "" until then.
+  start_date: ""              # First day of the session (arrival day)
+  end_date: ""                # Last day of the session
+  application_deadline: ""    # Applications due by the end of this day (Mountain Time)
+  refund_deadline: ""         # A delegate who drops out BEFORE this date gets a refund
+
+  # The most delegates who can attend. After this, a stand-by list is used.
+  capacity: 120
+
+  # Change to true once every spot is taken. The home page will then tell
+  # families to ask their Post about the stand-by list.
+  capacity_reached: false
+
+
+# ---------------------------------------------------------------------
+# 4. WHERE THE SESSION IS HELD
+# ---------------------------------------------------------------------
+# All venue information lives here, and ONLY here. If the venue changes,
+# change it in this section. No other file names the venue.
+venue:
+  name: "Gowen Field & the Idaho State Capitol"
+  city: "Boise, Idaho"
+
+  # Street address where families drop delegates off.
+  # Leave "" to hide it.
+  # TODO: Add the check-in / drop-off address once it is confirmed.
+  address: ""
+
+  # Optional: one or two sentences about the venue (for example lodging or
+  # meals). Don't describe activities. The week stays a surprise.
+  # Leave "" to hide it.
+  note: ""
+
+  # Words that belong ONLY to this venue. The site won't build if one of
+  # them is typed into any other file, so the venue name can never get
+  # stuck on a page after a move. Update this list if the venue changes.
+  check_words: ["Gowen"]
+
+
+# ---------------------------------------------------------------------
+# 5. COST
+# ---------------------------------------------------------------------
+cost:
+  # Cost per delegate, in dollars. Numbers only, no $ sign.
+  # TODO: Confirm the 2027 cost. ($500 was the 2026 cost.)
+  amount: 500
+
+  # Who Posts should make checks payable to. Leave "" to hide it.
+  # TODO: Add the name checks should be made payable to.
+  check_payable_to: ""
+
+
+# ---------------------------------------------------------------------
+# 6. HOW POSTS REGISTER DELEGATES
+# ---------------------------------------------------------------------
+registration:
+  # Where Posts mail the signed application pages, a copy of each
+  # delegate's birth certificate, and the check. One line per line of the
+  # envelope.
+  mailing_address:
+    - "Department of Idaho"
+    - "901 W Warren Street"
+    - "Boise, ID 83706-3825"
+
+  # Where Posts email each delegate's contact details (see the For Legion
+  # Posts page for the list of details).
+  email: "idahoalboysstate@gmail.com"
+
+
+# ---------------------------------------------------------------------
+# 7. CONTACTS
+# ---------------------------------------------------------------------
+contact:
+  # The main program email address. Shown on the Contact page and footer.
+  email: "idahoalboysstate@gmail.com"
+
+  # People listed on the Contact and For Legion Posts pages.
+  # To add someone, copy the four lines that start with "- name" and paste
+  # them underneath, keeping the same spaces. Leave phone or email as ""
+  # to hide them.
+  people:
+    - name: "Bob Skinner"
+      title: "President of Boys State"
+      # TODO: PLACEHOLDER phone number (555 numbers are fake). Replace it
+      # with a real number once someone agrees to have it on the website.
+      phone: "(208) 555-0100 [TODO: placeholder number]"
+      email: ""
+
+
+# ---------------------------------------------------------------------
+# 8. LINKS TO OTHER WEBSITES
+# ---------------------------------------------------------------------
+links:
+  # The American Legion's Find a Post directory. Every "How to Attend"
+  # button points here.
+  find_a_post: "https://mylegion.org/PersonifyEbusiness/Find-a-Post"
+
+  # The national American Legion Boys State and Boys Nation website.
+  national_program: "https://www.boysandgirlsstate.org/"
+
+  # Idaho's program for young women.
+  girls_state: "https://idaho.legion.org/idaho/girlsstate"
+
+  # The American Legion, Department of Idaho website.
+  department_of_idaho: "https://www.legion.org/idaho"
+
+  # Where volunteer staff and counselors complete their background check.
+  background_check: "https://opportunities.averity.com/IdahoAL"
+
+  # Social media. Leave "" to hide a link.
+  # TODO: Add the official Instagram address.
+  instagram: ""
+
+
+# ---------------------------------------------------------------------
+# 9. DOCUMENTS
+# ---------------------------------------------------------------------
+# Every downloadable document. They are all listed on the Documents page,
+# and each one also appears on the page for its audience.
+#
+# For each document:
+#   title:  The name people see.
+#   for:    Who it's for. One of: posts, delegates, staff
+#   link:   EITHER a full web address starting with https://
+#           OR a file you uploaded to the src/documents folder, written
+#           like this: "documents/2027-application-packet.pdf"
+#           Leave it as "" to show "Coming soon".
+#   note:   Optional short line shown under the title. Leave "" for none.
+#
+# To add a document, copy all four lines of one entry (starting at
+# "- title") and paste them at the end of the list, keeping the spaces.
+documents:
+  - title: "2027 Application Packet"
+    for: posts
+    link: ""
+    note: "Will be posted when the 2027 session is announced."
+
+  - title: "2027 Letter to Post Commanders"
+    for: posts
+    link: ""
+    note: "Will be posted when the 2027 session is announced."
+
+  - title: "2026 Application Packet"
+    for: posts
+    link: "https://idaho.legion.org/sites/legion.org/files/legion/site-documents/2026%20Application%20packet.pdf"
+    note: "Last year's packet, for reference only. Use the 2027 packet once it's posted."
+
+  - title: "2026 Letter to Post Commanders"
+    for: posts
+    link: "https://idaho.legion.org/sites/legion.org/files/legion/site-documents/2026%20Boys%20State%20Commander%20Info%20Letter.pdf"
+    note: "Last year's letter, for reference only."
+
+  - title: "How to Write a Boys State Bill"
+    for: delegates
+    link: "https://idaho.legion.org/sites/legion.org/files/legion/site-documents/2024%20How%20to%20Write%20a%20Boys%20State%20Bill.docx"
+    note: "A guide to drafting a bill."
+
+  # TODO: Upload a packing list that covers logistics only (nothing about
+  # activities), then put its file name in "link" below.
+  - title: "Packing List"
+    for: delegates
+    link: ""
+    note: "A printable checklist of what to bring."
+
+  - title: "Volunteer Staff Background Check"
+    for: staff
+    link: "https://opportunities.averity.com/IdahoAL"
+    note: "For volunteer counselors and staff."
+
+
+# ---------------------------------------------------------------------
+# 10. HOME PAGE STATUS MESSAGES
+# ---------------------------------------------------------------------
+# The home page shows one of these automatically, depending on the date.
+messages:
+  deadline_passed: "The application deadline has passed. Contact your local American Legion Post about the stand-by list."
+  capacity_reached: "Every spot for this year's session is filled. Contact your local American Legion Post about the stand-by list."
+  in_session: "This year's session is underway. Thank you to every Post and sponsor who made it possible."
+  session_over: "That's a wrap on this year's session. Dates for next year will be announced soon."
+
+
+# ---------------------------------------------------------------------
+# 11. THE AMERICAN LEGION EMBLEM
+# ---------------------------------------------------------------------
+# The emblem may only be used after the Department of Idaho approves it.
+# Until then the site shows a clearly labeled placeholder box.
+# After approval: upload the emblem file to the src/images folder, put its
+# name below (example: "images/legion-emblem.png"), and set approved: true.
+legion_emblem:
+  approved: false
+  image: ""
+  alt: "The American Legion emblem"
+
+
+# ---------------------------------------------------------------------
+# 12. NOTE SHOWN ON EVERY PAGE
+# ---------------------------------------------------------------------
+photo_consent_note: "Photos of delegates are posted only with consent."
+
+
+# ---------------------------------------------------------------------
+# 13. VISITOR COUNTS (OPTIONAL)
+# ---------------------------------------------------------------------
+# Paste the "token" from Cloudflare Web Analytics to count page visits.
+# It uses no cookies and collects no personal information. Setup steps
+# are in docs/DEPLOYMENT.md. Leave "" to turn visitor counting off.
+analytics_token: ""

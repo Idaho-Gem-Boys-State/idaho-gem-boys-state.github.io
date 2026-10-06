@@ -1,0 +1,34 @@
+{#- The session box on the home page. Everything comes from site-details.yaml.
+    When dates are announced, site.js runs the countdown and swaps the
+    message as the deadline and session pass. -#}
+{%- set s = site.session -%}
+<div class="session-card" data-session
+  {%- if s.announced %} data-deadline="{{ s.iso_deadline }}" data-start="{{ s.iso_start }}" data-end="{{ s.iso_end }}" data-full="{{ s.capacity_reached }}"{% endif %}>
+  <p class="session-card__label">{{ s.year }} &middot; {{ s.ordinal }} session</p>
+  <h2 class="session-card__dates">{{ s.dates_short }}</h2>
+
+  {%- if not s.announced %}
+  <p class="session-card__message">{{ s.coming_soon_message }}</p>
+  {%- else %}
+  <div class="session-card__status" data-state="open"{% if s.status != "open" %} hidden{% endif %}>
+    <p class="session-card__sub">Applications due in</p>
+    <div class="countdown" aria-hidden="true">
+      <span class="countdown__unit"><span class="countdown__num" data-unit="days">&ndash;</span><span class="countdown__label" data-label="days">days</span></span>
+      <span class="countdown__unit"><span class="countdown__num" data-unit="hours">&ndash;</span><span class="countdown__label" data-label="hours">hours</span></span>
+      <span class="countdown__unit"><span class="countdown__num" data-unit="minutes">&ndash;</span><span class="countdown__label" data-label="minutes">min</span></span>
+    </div>
+    <p class="session-card__deadline">Deadline: <strong>{{ s.deadline_text }}</strong></p>
+  </div>
+  <p class="session-card__message" data-state="full"{% if s.status != "full" %} hidden{% endif %}>{{ site.messages.capacity_reached }}</p>
+  <p class="session-card__message" data-state="closed"{% if s.status != "closed" %} hidden{% endif %}>{{ site.messages.deadline_passed }}</p>
+  <p class="session-card__message" data-state="in-session"{% if s.status != "in-session" %} hidden{% endif %}>{{ site.messages.in_session }}</p>
+  <p class="session-card__message" data-state="over"{% if s.status != "over" %} hidden{% endif %}>{{ site.messages.session_over }}</p>
+  {%- endif %}
+
+  <dl class="session-card__facts">
+    <div><dt>{% icon "pin" %}Where</dt><dd>{{ site.venue.name }}<span>{{ site.venue.city }}</span></dd></div>
+    <div><dt>{% icon "school" %}Who</dt><dd>High school juniors<span>Rising seniors</span></dd></div>
+    <div><dt>{% icon "users" %}Spots</dt><dd>{{ s.capacity }} delegates<span>Then a stand-by list</span></dd></div>
+    <div><dt>{% icon "dollar" %}Cost</dt><dd>{{ site.cost.text }}<span>Usually paid by a sponsor</span></dd></div>
+  </dl>
+</div>

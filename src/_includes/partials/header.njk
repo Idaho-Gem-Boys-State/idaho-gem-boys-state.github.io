@@ -1,0 +1,33 @@
+<header class="site-header" data-header>
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/">
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gem-mark"></use></svg>
+      <span class="brand__text">
+        <span class="brand__name">{{ site.program_name }}</span>
+        <span class="brand__sub">Idaho</span>
+      </span>
+    </a>
+    <a class="btn btn--gold btn--sm header-cta" href="/how-to-attend/">How to Attend</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <svg class="icon icon--open" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg>
+      <svg class="icon icon--close" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+      <span class="nav-toggle__label">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <ul class="site-nav__main">
+        {%- for item in navigation.main %}
+        {%- if item.button %}
+        <li class="site-nav__cta"><a class="btn btn--gold btn--sm" href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- else %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+      <ul class="site-nav__more">
+        {%- for item in navigation.more %}
+        <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

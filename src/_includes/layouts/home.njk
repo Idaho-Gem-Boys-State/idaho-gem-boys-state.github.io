@@ -1,0 +1,119 @@
+---
+layout: layouts/base.njk
+---
+{#- Home page layout. The words come from src/pages/home.md;
+    dates, venue, cost, and spots come from site-details.yaml. -#}
+{%- set s = site.session -%}
+
+<section class="hero" aria-labelledby="hero-title">
+  <svg class="hero__art" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><use href="#gem-art"></use></svg>
+  <div class="wrap hero__inner">
+    <div class="hero__copy">
+      <p class="eyebrow">{% icon "star" %}{{ hero_kicker }}</p>
+      <h1 id="hero-title">{{ hero_headline | mdInline | safe }}</h1>
+      <p class="hero__lede">{{ hero_text | mdInline | safe }}</p>
+      <div class="hero__actions">
+        <a class="btn btn--gold btn--lg" href="/how-to-attend/">How to Attend{% icon "arrow-right" %}</a>
+        <a class="btn btn--ghost-light btn--lg" href="/the-experience/">The Experience</a>
+      </div>
+    </div>
+    {% include "partials/session-card.njk" %}
+  </div>
+</section>
+
+<section class="section section--white">
+  <div class="wrap">
+    <div class="pitch prose">
+      {{ content | safe }}
+    </div>
+    <h2 class="outcomes__heading">{{ outcomes_heading }}</h2>
+    <ul class="outcomes" role="list">
+      {%- for item in outcomes %}
+      <li class="outcome">
+        <span class="outcome__icon">{% icon item.icon %}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text | mdInline | safe }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--navy section--cut" aria-labelledby="mystery-title">
+  <svg class="section__art" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><use href="#gem-art"></use></svg>
+  <div class="wrap mystery">
+    <div class="mystery__head">
+      <p class="eyebrow">{% icon "star" %}{{ mystery_kicker }}</p>
+      <h2 id="mystery-title">{{ mystery_heading }}</h2>
+      <p>{{ mystery_text | mdInline | safe }}</p>
+    </div>
+    <ul class="mystery__list" role="list">
+      {%- for item in mystery_list %}
+      <li>{% icon "star" %}<span>{{ item | mdInline | safe }}</span></li>
+      {%- endfor %}
+    </ul>
+    <p class="mystery__foot">{{ mystery_footer }} <a href="/the-experience/">More about the experience{% icon "arrow-right" %}</a></p>
+  </div>
+</section>
+
+<section class="section section--garnet" aria-labelledby="bn-title">
+  <div class="wrap bn">
+    <p class="bn__num" aria-hidden="true">2</p>
+    <div class="bn__copy">
+      <p class="eyebrow">{% icon "capitol" %}Boys Nation</p>
+      <h2 id="bn-title">{{ boys_nation_heading }}</h2>
+      <p>{{ boys_nation_text | mdInline | safe }}</p>
+    </div>
+    <a class="btn btn--light" href="/boys-nation/">Boys Nation &amp; alumni{% icon "arrow-right" %}</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="paths-title">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">{% icon "star" %}Find your way in</p>
+      <h2 id="paths-title">{{ paths_heading }}</h2>
+    </div>
+    <ul class="paths" role="list">
+      {%- for item in paths %}
+      <li class="path">
+        <p class="path__who">{{ item.who }}</p>
+        <h3 class="path__title"><a href="{{ item.url }}">{{ item.title }}</a></h3>
+        <p class="path__text">{{ item.text }}</p>
+        <span class="path__go" aria-hidden="true">{% icon "arrow-right" %}</span>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section--white" aria-labelledby="numbers-title">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">{% icon "star" %}By the numbers</p>
+      <h2 id="numbers-title">A national tradition in the Gem State</h2>
+    </div>
+    <ul class="stats" role="list">
+      <li class="stat"><span class="stat__num">1935</span> <span class="stat__label">The year Boys State became a program of The American Legion</span></li>
+      <li class="stat"><span class="stat__num">{{ s.ordinal }}</span> <span class="stat__label">Idaho session, coming in {{ s.year }}</span></li>
+      <li class="stat"><span class="stat__num">{{ s.capacity }}</span> <span class="stat__label">spots for delegates this year</span></li>
+      <li class="stat"><span class="stat__num">2</span> <span class="stat__label">delegates chosen for Boys Nation in Washington, D.C.</span></li>
+    </ul>
+
+    <h2 class="quotes__heading">In their words</h2>
+    <div class="quotes">
+      {%- for item in testimonials %}
+      <figure class="quote-card">
+        <blockquote><p>{{ item.quote }}</p></blockquote>
+        <figcaption><strong>{{ item.name }}</strong>{% if item.detail %}<span>{{ item.detail }}</span>{% endif %}</figcaption>
+      </figure>
+      {%- else %}
+      <div class="quote-card quote-card--placeholder">
+        <p>[TODO: Add one to three quotes from alumni or parents, with their written permission. They go in the "testimonials" section of src/pages/home.md.]</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{% include "partials/cta.njk" %}

@@ -1,0 +1,21 @@
+{#- The "How to attend" call to action at the end of student and parent pages. -#}
+<section class="cta" aria-labelledby="cta-title">
+  <svg class="cta__art" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><use href="#gem-art"></use></svg>
+  <div class="wrap cta__inner">
+    <div class="cta__copy">
+      <p class="eyebrow">{% icon "star" %}How to attend</p>
+      <h2 id="cta-title">It starts with your local Post.</h2>
+      <p>Students don't apply on their own. A local American Legion Post selects and sponsors each delegate. The {{ site.cost.text }} cost is usually covered by the Post, a local business, or a community group.</p>
+      <ol class="cta__steps" role="list">
+        <li><span><strong>Find a Post</strong> near you.</span></li>
+        <li><span><strong>Ask</strong> about Gem Boys State {{ site.session.year }}.</span></li>
+        <li><span><strong>Get selected</strong>, and the Post registers you.</span></li>
+      </ol>
+    </div>
+    <div class="cta__actions">
+      <a class="btn btn--gold btn--lg" href="{{ site.links.find_a_post }}">Find a Post near you{% icon "external" %}<span class="visually-hidden"> (opens the American Legion website)</span></a>
+      <a class="btn btn--ghost-light" href="/how-to-attend/">Step-by-step guide{% icon "arrow-right" %}</a>
+      <p class="cta__note">{{ site.session.deadline_sentence }}</p>
+    </div>
+  </div>
+</section>

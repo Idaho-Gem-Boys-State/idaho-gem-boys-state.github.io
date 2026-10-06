@@ -1,0 +1,54 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gem-mark"></use></svg>
+          <span class="brand__text">
+            <span class="brand__name">{{ site.program_name }}</span>
+            <span class="brand__sub">Idaho</span>
+          </span>
+        </a>
+        <p>{{ site.tagline }}.</p>
+        <p class="footer-consent">{% icon "camera" %}<span>{{ site.photo_consent_note }}</span></p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer">
+        <h2>Explore</h2>
+        <ul>
+          {%- for item in navigation.main %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2>More</h2>
+        <ul>
+          {%- for item in navigation.more %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>Related</h2>
+        <ul>
+          <li><a href="{{ site.links.find_a_post }}">Find an American Legion Post</a></li>
+          <li><a href="{{ site.links.national_program }}">American Legion Boys State &amp; Boys Nation</a></li>
+          <li><a href="{{ site.links.girls_state }}">Idaho Syringa Girls State</a></li>
+          {%- if site.links.instagram %}
+          <li><a href="{{ site.links.instagram }}">Instagram</a></li>
+          {%- endif %}
+        </ul>
+        <h2>Contact</h2>
+        <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      {% emblem %}
+      <p>&copy; {{ site.build_year }} {{ site.program_name }}, a program of The American Legion, Department of Idaho.</p>
+    </div>
+  </div>
+</footer>

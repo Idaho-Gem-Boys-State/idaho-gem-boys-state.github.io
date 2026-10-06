@@ -1,0 +1,21 @@
+{
+  "name": "gem-boys-state",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Gem Boys State, Idaho's week-long civics program for rising high school seniors.",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/check-site.js && eleventy --serve",
+    "build": "node scripts/check-site.js && eleventy",
+    "check": "node scripts/check-site.js",
+    "todo": "node scripts/list-todos.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "js-yaml": "4.3.2",
+    "markdown-it": "14.3.2"
+  }
+}
