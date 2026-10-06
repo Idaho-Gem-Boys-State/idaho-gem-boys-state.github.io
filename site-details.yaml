@@ -137,6 +137,10 @@ contact:
   # The main program email address. Shown on the Contact page and footer.
   email: "idahoalboysstate@gmail.com"
 
+  # Where delegates email the bill they must write before arriving.
+  # Shown on the Getting Ready page.
+  bill_email: "gembsbills@gmail.com"
+
   # People listed on the Contact and For Legion Posts pages.
   # To add someone, copy the four lines that start with "- name" and paste
   # them underneath, keeping the same spaces. Leave phone or email as ""

@@ -38,7 +38,7 @@ description: "Packing list, dress code, and frequently asked questions for Gem B
 ## Before you go
 
 {% callout "Required: write your bill before you arrive", "garnet" %}
-Every delegate must write a bill **before arriving** at Gem Boys State. Use *How to Write a Boys State Bill* (below) as your guide.
+Every delegate must write a bill and email it to [{{ site.contact.bill_email }}](mailto:{{ site.contact.bill_email }}) **before arriving** at Gem Boys State. Use *How to Write a Boys State Bill* (below) as your guide.
 {% endcallout %}
 
 {% documentList "delegates" %}

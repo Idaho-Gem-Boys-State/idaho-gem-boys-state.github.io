@@ -11,9 +11,9 @@ These don't appear on the website, but the information is still missing.
 - **Line 89:** Add the check-in / drop-off address once it is confirmed.
 - **Line 108:** Confirm the 2027 cost. ($500 was the 2026 cost.)
 - **Line 112:** Add the name checks should be made payable to.
-- **Line 147:** PLACEHOLDER phone number (555 numbers are fake). Replace it with a real number once someone agrees to have it on the website.
-- **Line 174:** Add the official Instagram address.
-- **Line 221:** Upload a packing list that covers logistics only (nothing about activities), then put its file name in "link" below.
+- **Line 151:** PLACEHOLDER phone number (555 numbers are fake). Replace it with a real number once someone agrees to have it on the website.
+- **Line 178:** Add the official Instagram address.
+- **Line 225:** Upload a packing list that covers logistics only (nothing about activities), then put its file name in "link" below.
 
 ## Placeholders shown on the website
 
